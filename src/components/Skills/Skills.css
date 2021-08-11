@@ -1,0 +1,35 @@
+.chipIcon, .badgeCheckIcon {
+    height: 50px;
+    width: 50px;
+}
+.chipIcon{
+    color: #6b6e70;
+    align-self: center;
+}
+.badgeCheckIcon{
+    color: #61892f;
+}
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    grid-gap: 25px;
+    color: #6b6e70;
+}
+.skillss{
+    display: grid;
+    margin-left: 600px;
+}
+.text-center{
+    width: 54%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #6b6e70;
+}
+
+.technologies {
+    vertical-align: 80%;
+}

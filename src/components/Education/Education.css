@@ -1,0 +1,30 @@
+.AcademicCapIcon{
+    height: 50px;
+    width: 50px;
+    color: #6b6e70;
+    width: 100%;
+}
+
+.education-text, .courses-text{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #6b6e70;
+    padding-top: 20px;
+}
+
+.courses-text a {
+    text-decoration: none;
+    color: #6b6e70;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.courses-text a span:hover {
+    color: #61892f
+}

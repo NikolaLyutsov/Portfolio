@@ -1,0 +1,70 @@
+.intro {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    color: #6b6e70;
+}
+
+.codeIcon {
+    align-self: center;
+    height: 50px;
+    width: 50px;
+}
+
+.projectsList {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "project project"
+        "project project";
+    justify-content: center;
+    color: cornsilk;
+}
+.project {
+    margin: 10px;
+}
+.projectsList a {
+    text-decoration: none;
+}
+.title {
+    color: #61892f;
+}
+.usedTehnolog {
+    color: white;
+}
+.projects-description {
+    color: white;
+}
+
+link:hover {
+    cursor: pointer;
+}
+.project-image {
+    position: absolute;
+    height: 300px;
+    width: 500px;
+    border-radius: 3%;
+}
+.hoverr {
+    height: 300px;
+    width: 500px;
+    position: relative;
+    opacity: 0;
+    text-align: center;
+}
+.project:hover .project-image {
+    opacity: 0.2;
+}
+.project:hover .hoverr {
+    opacity: 10;
+}
+
+.project1,
+.project2 {
+    padding-left: 20px;
+    border-radius: 25px;
+}
