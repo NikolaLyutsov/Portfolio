@@ -13,6 +13,7 @@
     align-self: center;
     height: 50px;
     width: 50px;
+    padding-top: 50px;
 }
 
 .projectsList {
@@ -24,6 +25,21 @@
     justify-content: center;
     color: cornsilk;
 }
+
+@media screen and (max-width: 960px) {
+    .projectsList {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "project"
+            "project"
+            "project"
+            "project";
+        justify-content: center;
+        color: cornsilk;
+    }
+}
+
 .project {
     margin: 10px;
 }

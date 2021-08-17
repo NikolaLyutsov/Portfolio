@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section className="skillss">
       <div>
-        <div className="text-center"  id='skills'>
+        <div className="text-center" id='skills'>
           <ChipIcon className="chipIcon" />
           <h1 className="heading">
             Skills &amp; Technologies

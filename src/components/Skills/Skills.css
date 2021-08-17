@@ -1,27 +1,33 @@
-.chipIcon, .badgeCheckIcon {
+.chipIcon,
+.badgeCheckIcon {
     height: 50px;
     width: 50px;
 }
-.chipIcon{
+.chipIcon {
     color: #6b6e70;
     align-self: center;
+    padding-top: 50px;
 }
-.badgeCheckIcon{
+.badgeCheckIcon {
     color: #61892f;
 }
 .skills {
+    margin: auto;
+    width: 50%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 1000px;
+    grid-template-columns: 3fr 1fr;
     grid-gap: 25px;
     color: #6b6e70;
+    padding-top: 20px;
 }
-.skillss{
-    display: grid;
-    margin-left: 600px;
+@media screen and (max-width: 1034px) {
+    .badgeCheckIcon {
+        display: flex;
+    }
 }
-.text-center{
+.text-center {
     width: 54%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

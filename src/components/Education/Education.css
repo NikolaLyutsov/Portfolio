@@ -1,11 +1,12 @@
-.AcademicCapIcon{
+.AcademicCapIcon {
     height: 50px;
     width: 50px;
     color: #6b6e70;
     width: 100%;
 }
 
-.education-text, .courses-text{
+.education-text,
+.courses-text {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -26,5 +27,5 @@
 }
 
 .courses-text a span:hover {
-    color: #61892f
+    color: #61892f;
 }

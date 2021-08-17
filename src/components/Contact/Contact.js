@@ -12,18 +12,19 @@ export default function Contact() {
         e.preventDefault();
 
         db.collection("contacts")
-        .add({
-            name: name,
-            email: email,
-            message: message
-        })
-        .then(() => { alert('Message sent!') })
-            .catch((error) => { alert(error.message);
+            .add({
+                name: name,
+                email: email,
+                message: message
+            })
+            .then(() => { alert('Message sent!') })
+            .catch((error) => {
+                alert(error.message);
             });
 
-            setName('');
-            setEmail('');
-            setMessage('');
+        setName('');
+        setEmail('');
+        setMessage('');
     }
 
     return (

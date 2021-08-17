@@ -1,34 +1,42 @@
 .googleMaps {
     height: 500px;
-    width: 1000px;
+    width: 100%;
 }
 
-.identificationIcon{
+.identificationIcon {
     height: 50px;
     width: 50px;
     color: #6b6e70;
 }
 
-.startContact{
+.startContact {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 50px;
 }
 
-.contactContainer{
+.contactContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 .info {
     color: #6b6e70;
-    padding-left: 50px;
 }
-.hd2, .hd3 {
-    color: #61892f ;
+.hd2,
+.hd3 {
+    color: #61892f;
 }
-.hd3{
+.hd3 {
     font-size: 18px;
 }
 .contactLink {
@@ -37,28 +45,28 @@
 }
 
 .contactLink:hover {
-    color: #61892f ;
+    color: #61892f;
 }
 .form {
     color: #6b6e70;
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
 }
 .formIntro {
-    width: 100%;
     padding: 20px;
 }
-.formInputs{
+.formInputs {
     display: flex;
     flex-direction: column;
-    margin-left: 470px;
+    justify-content: center;
+    margin-left: 23%;
     padding: 20px;
     width: 50%;
 }
 
-input[type=text],input[type=email] {
+input[type="text"],
+input[type="email"] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -66,9 +74,9 @@ input[type=text],input[type=email] {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-  }
+}
 
-  button[type=submit] {
+button[type="submit"] {
     box-shadow: 0px 1px 0px 0px #1c1b18;
     background-color: #86c232;
     border-radius: 25px;
@@ -83,14 +91,14 @@ input[type=text],input[type=email] {
     text-decoration: none;
     transition: 1.1s cubic-bezier(0.23, 1, 0.32, 1);
     margin-top: 20px;
-  }
-  
-  button[type=submit]:hover {
+}
+
+button[type="submit"]:hover {
     background-color: white;
     color: #86c232;
-  }
-  
-  textarea {
+}
+
+textarea {
     width: 100%;
     height: 150px;
     padding: 12px 20px;
@@ -100,4 +108,4 @@ input[type=text],input[type=email] {
     background-color: #f8f8f8;
     font-size: 16px;
     resize: none;
-  }
+}

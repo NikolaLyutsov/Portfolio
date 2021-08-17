@@ -1,43 +1,51 @@
-import { ArrowRightIcon } from "@heroicons/react/solid";
-import React from "react";
+import React, { useState } from 'react';
 import './Navbar.css';
+import { ArrowRightIcon } from "@heroicons/react/solid";
 
-const myFunction = () => {
-  var x = document.getElementById("myNavigation");
-  if (x.className === "navigation") {
-    x.className += " responsive";
-  } else {
-    x.className = "navigation";
-  }
+function Navbar() {
+    const [click, setClick] = useState(false);
+    const handleClick = () => setClick(!click);
+
+    return (
+        <>
+            <nav className='navbar'>
+                <a to='#about' className='navbar-logo'>
+                    Nikola Lyutsov
+                </a>
+                <div className='menu-icon' onClick={handleClick}>
+                    <i className={click ? 'fa fa-times' : 'fa fa-bars'} />
+                </div>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                    <li className='nav-item'>
+                        <a href='#projects' className='nav-links' >
+                            Past Work
+                        </a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href="#skills" className='nav-links'>
+                            Skills
+                        </a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href="#education" className='nav-links'>
+                            Education
+                        </a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href="#contact" className='nav-links'>
+                            Contact
+                        </a>
+                    </li>
+                    <li className='nav-item'>
+                        <a href="#hireMe" className='nav-links'>
+                            Hire Me
+                            <ArrowRightIcon className="ArrowRightIcon" />
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </>
+    )
 }
 
-export default function Navbar() {
-  
-  return (
-    <header>
-      <div>
-        <nav className="navigation" id="myNavigation">
-          <a href="#about">
-            Nikola Lyutsov
-          </a>
-          <a href="#projects">
-            Past Work
-          </a>
-          <a href="#skills">
-            Skills
-          </a>
-          <a href="#education">
-            Education
-          </a>
-          <a href="#hireMe" className='hireMe'>
-            Hire Me 
-             <ArrowRightIcon className="ArrowRightIcon" />
-          </a>
-          <a href="javascript:void(0);" class="icon" onclick={myFunction}>
-            <i class="fa fa-bars"></i>
-          </a>
-        </nav>
-      </div>
-    </header>
-  );
-}
+export default Navbar;
