@@ -15,20 +15,8 @@ This is a single page website. It is a portfolio website of me. I wrote it on Vi
 ## What's included
 Within the download archive you'll find the following directories and files. You'll see something like this:
 
-portfolio-project/
-university project/
-   ├── styles/
-   │   ├── style.css
-   │   ├── style.css.map
-   │   └── style.scss
-   └── images/
-   └── js/
-   └── Contacts.html
-   └── ForUs.html
-   └── Gallery.html
-   └── Home.html
-   └── Program.html
-   └── Promotions.html
+src/components: => About/Contact/Education/Navbar/Projects/Skills/
+
 
 ## Dependencies
 heroicons - We're using the amazing Font Awesome library for the icons.
