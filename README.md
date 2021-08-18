@@ -16,23 +16,19 @@ This is a single page website. It is a portfolio website of me. I wrote it on Vi
 Within the download archive you'll find the following directories and files. You'll see something like this:
 
 portfolio-project/
-   ├── src/
-   │   ├── components/
-   │   │   ├── About/
-   │   │   ├── Contact/
-   │   │   ├── Education/
-   │   │   ├── Navbar/
-   │   │   ├── Projects/
-   │   │   ├── Skills/
-   │   └── images/
-   ├── App.css
-   ├── App.js
-   ├── App.test.js
-   ├── firebase.js
-   ├── index.js
-   ├── logo.svg
-   ├── reportWebVitals.js
-   └── setupTests.js
+university project/
+   ├── styles/
+   │   ├── style.css
+   │   ├── style.css.map
+   │   └── style.scss
+   └── images/
+   └── js/
+   └── Contacts.html
+   └── ForUs.html
+   └── Gallery.html
+   └── Home.html
+   └── Program.html
+   └── Promotions.html
 
 ## Dependencies
 heroicons - We're using the amazing Font Awesome library for the icons.
